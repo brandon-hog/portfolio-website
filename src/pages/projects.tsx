@@ -1,4 +1,3 @@
-// pages/projects.tsx
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { PROJECTS_DATA } from '../data/resume-data';

@@ -1,4 +1,3 @@
-// pages/education.tsx
 import { EDUCATION_DATA } from '../data/resume-data';
 
 export default function Education() {

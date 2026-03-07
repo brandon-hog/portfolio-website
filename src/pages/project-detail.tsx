@@ -1,4 +1,3 @@
-// pages/project-detail.tsx
 import { useParams, Link } from 'react-router-dom';
 import { PROJECTS_DATA } from '../data/resume-data';
 
