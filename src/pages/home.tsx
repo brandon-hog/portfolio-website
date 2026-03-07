@@ -30,7 +30,7 @@ export default function Home() {
           View Projects
         </Link>
         <a 
-          href="mailto:brandon.m.hoggatt@gmail.com" // [cite: 2]
+          href="mailto:brandon.m.hoggatt@gmail.com" 
           className="px-6 py-3 bg-white text-slate-900 font-semibold border border-slate-300 rounded-lg shadow-sm hover:bg-slate-50 transition-all active:scale-95"
         >
           Contact Me
