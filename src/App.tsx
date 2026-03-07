@@ -1,4 +1,4 @@
-// src/App.tsx
+// App.tsx
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/home';
 import Education from './pages/education';
@@ -6,23 +6,23 @@ import Projects from './pages/projects';
 import ProjectDetail from './pages/project-detail';
 
 export default function App() {
-  // Utilizing a standard flex layout for the main application shell guarantees footer placement and responsive behavior.
+  // Vercel aesthetic: Pure black background, stark white text, and subtle transparent borders with backdrop blur for nav.
   return (
     <Router>
-      <div className="min-h-screen min-w-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-        <nav className="bg-slate-900 text-white shadow-md sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <Link to="/" className="text-xl font-bold tracking-tight hover:text-blue-400 transition-colors">
+      <div className="min-h-screen min-w-screen bg-black text-zinc-100 flex flex-col font-sans selection:bg-zinc-800 selection:text-white">
+        <nav className="bg-black/50 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
+          <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <Link to="/" className="text-xl font-bold tracking-tighter text-white hover:text-zinc-300 transition-colors">
               Brandon Hoggatt
             </Link>
-            <div className="space-x-6 font-medium">
-              <Link to="/education" className="hover:text-blue-400 transition-colors">Education</Link>
-              <Link to="/projects" className="hover:text-blue-400 transition-colors">Projects</Link>
+            <div className="space-x-6 text-sm font-medium text-zinc-400">
+              <Link to="/education" className="hover:text-white transition-colors">Education</Link>
+              <Link to="/projects" className="hover:text-white transition-colors">Projects</Link>
             </div>
           </div>
         </nav>
 
-        <main className="flex-grow w-full max-w-6xl mx-auto px-4 py-8">
+        <main className="flex-grow w-full max-w-5xl mx-auto px-6 py-12 md:py-20">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/education" element={<Education />} />
@@ -31,7 +31,7 @@ export default function App() {
           </Routes>
         </main>
 
-        <footer className="bg-slate-900 text-slate-400 text-center py-6 mt-auto">
+        <footer className="border-t border-zinc-800 bg-black text-zinc-500 text-sm text-center py-8 mt-auto">
           <p>© {new Date().getFullYear()} Brandon Hoggatt. All rights reserved.</p>
         </footer>
       </div>
