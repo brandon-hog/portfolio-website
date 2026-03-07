@@ -5,15 +5,6 @@ export default function Home() {
   return (
     <div className="flex flex-col items-start justify-center min-h-[60vh] space-y-10 animate-fade-in-up max-w-3xl">
       <div className="space-y-6">
-        {/* Vercel uses highly contrasted, subtle tech indicators. We use a pulsing dot for the active clearance. */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-xs font-mono text-zinc-300">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          Active TS/SCI Clearance
-        </div>
-
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white leading-tight">
           Software Engineer <br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 to-zinc-600">

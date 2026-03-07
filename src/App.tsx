@@ -11,7 +11,7 @@ export default function App() {
     <Router>
       <div className="min-h-screen min-w-screen bg-black text-zinc-100 flex flex-col font-sans selection:bg-zinc-800 selection:text-white">
         <nav className="bg-black/50 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
-          <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="max-w-[90%] mx-auto px-6 py-4 flex justify-between items-center">
             <Link to="/" className="text-xl font-bold tracking-tighter text-white hover:text-zinc-300 transition-colors">
               Brandon Hoggatt
             </Link>

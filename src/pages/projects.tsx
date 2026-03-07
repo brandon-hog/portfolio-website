@@ -25,8 +25,7 @@ export default function Projects() {
   return (
     <div className="w-full">
       <h1 className="text-3xl font-bold mb-8 text-white tracking-tight">Technical Projects</h1>
-      
-      {/* Vercel inspired inputs: dark backgrounds, subtle rings on focus */}
+    
       <div className="flex flex-col md:flex-row gap-4 mb-10">
         <input
           type="text"
