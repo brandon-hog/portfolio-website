@@ -9,11 +9,11 @@ export default function App() {
   // Utilizing a standard flex layout for the main application shell guarantees footer placement and responsive behavior.
   return (
     <Router>
-      <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
+      <div className="min-h-screen min-w-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
         <nav className="bg-slate-900 text-white shadow-md sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <Link to="/" className="text-xl font-bold tracking-tight hover:text-blue-400 transition-colors">
-              Brandon Hoggatt {/* [cite: 1] */}
+              Brandon Hoggatt
             </Link>
             <div className="space-x-6 font-medium">
               <Link to="/education" className="hover:text-blue-400 transition-colors">Education</Link>
@@ -32,7 +32,7 @@ export default function App() {
         </main>
 
         <footer className="bg-slate-900 text-slate-400 text-center py-6 mt-auto">
-          <p>© {new Date().getFullYear()} Brandon Hoggatt. All rights reserved.</p> {/* [cite: 1] */}
+          <p>© {new Date().getFullYear()} Brandon Hoggatt. All rights reserved.</p>
         </footer>
       </div>
     </Router>

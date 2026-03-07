@@ -5,21 +5,21 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-[70vh] text-center space-y-8 animate-fade-in-up">
       <div className="space-y-4">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900">
-          Brandon Hoggatt {/* [cite: 1] */}
+          Brandon Hoggatt 
         </h1>
         <h2 className="text-2xl md:text-3xl font-medium text-slate-600">
           Software Engineer & Systems Developer
         </h2>
         {/* Calling out the clearance immediately in a distinct badge style quickly captures defense/cyber employer attention. */}
         <div className="inline-block mt-4 px-4 py-2 bg-red-100 text-red-800 border border-red-200 rounded-full font-bold text-sm tracking-wide shadow-sm">
-          Active TS/SCI Security Clearance {/* [cite: 3] */}
+          Active TS/SCI Security Clearance
         </div>
       </div>
 
       <p className="max-w-2xl text-lg text-slate-600 leading-relaxed">
         Passionate about architecting secure, scalable systems and robust full-stack applications. 
-        Leveraging advanced problem-solving abilities demonstrated as an ICPC Silver Medalist {/* [cite: 49, 52] */} to deliver 
-        production-grade software solutions in collaborative, high-pressure environments. {/* [cite: 52] */}
+        Leveraging advanced problem-solving abilities demonstrated as an ICPC Silver Medalist to deliver 
+        production-grade software solutions in collaborative, high-pressure environments.
       </p>
 
       <div className="flex space-x-4 pt-4">
