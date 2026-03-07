@@ -6,7 +6,6 @@ import Projects from './pages/projects';
 import ProjectDetail from './pages/project-detail';
 
 export default function App() {
-  // Vercel aesthetic: Pure black background, stark white text, and subtle transparent borders with backdrop blur for nav.
   return (
     <Router>
       <div className="min-h-screen min-w-screen bg-black text-zinc-100 flex flex-col font-sans selection:bg-zinc-800 selection:text-white">
