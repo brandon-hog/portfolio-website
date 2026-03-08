@@ -32,7 +32,7 @@ Ensure you have [Node.js](https://nodejs.org/) (v18+ recommended) installed on y
 
 1. **Clone the repository:**
 ```
-  git clone [https://github.com/brandon-hog/portfolio.git](https://github.com/brandon-hog/portfolio.git)
+  git clone https://github.com/brandon-hog/portfolio.git
   cd portfolio
 ```
 
