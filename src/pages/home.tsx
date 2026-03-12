@@ -6,15 +6,13 @@ export default function Home() {
       <div className="space-y-6">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white leading-tight">
           Software Engineer <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 to-zinc-600">
-            & Systems Developer.
-          </span>
         </h1>
         
         <p className="text-lg md:text-xl text-zinc-400 leading-relaxed max-w-2xl font-light">
-          Passionate about architecting secure, scalable systems and robust full-stack applications. 
-          Leveraging advanced problem-solving abilities demonstrated as an <strong className="text-zinc-200 font-medium">ICPC Silver Medalist</strong> to deliver 
-          production-grade software solutions in collaborative, high-pressure environments.
+          I am a Full-Stack Software Engineer and Computer Science student  passionate about solving complex
+          technical challenges. From engineering persistent UNIX-like file systems to building scalable REST
+          APIs, I prioritize maintainability, security, and efficiency. I am currently advancing my expertise
+          in cybersecurity and modern enterprise backends to continue building resilient infrastructure.
         </p>
       </div>
 
