@@ -49,13 +49,12 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'portfolio',
     title: 'Portfolio Website', 
-    languages: ['JavaScript', 'HTML', 'CSS'], 
+    languages: ['Vite', 'React', 'TailwindCSS', 'Javascript', 'HTML'], 
     category: 'Web Development',
     shortDescription: 'Personal portfolio highlighting projects and education.', 
     detailedDescription: [
-      'Designed and deployed a personal portfolio website using vanilla HTML, CSS and JavaScript.', 
-      'Hosted the application on GitHub Pages for public access.', 
-      'The site highlights my education, projects, and includes interactive elements such as animated navigation buttons.' 
+      'Designed and deployed a personal portfolio website on Github Pages with a custom domain using brandonmh.dev.',
+      'Utilized Vite, React, TailwindCSS, and React-router to build the website and display my project portfolio and education.' 
     ]
   }
 ];
