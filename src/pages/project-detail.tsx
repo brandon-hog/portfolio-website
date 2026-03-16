@@ -26,7 +26,7 @@ export default function ProjectDetail() {
         <div className="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-zinc-800/20 blur-3xl rounded-full pointer-events-none"></div>
 
         {/* Project Title */} 
-        <header className="flex flex-col mb-8 relative z-10">
+        <header className="flex flex-col gap-1 mb-8 relative z-10">
           <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">{project.title}</h1>
           {/* Project Category and Languages */}
             <span className="text-lg font-mono uppercase tracking-widest text-zinc-500 mr-auto">
@@ -61,8 +61,11 @@ export default function ProjectDetail() {
               </div>
             )}
 
-            {/* Project Description */}
+            {/* Project Image & Brief Description */}
             <div className={!project.imageUrl ? 'md:col-span-2' : ''}>
+              <h2 className="text-sm font-mono uppercase tracking-widest text-zinc-500 mb-4">
+                Brief Description
+              </h2>
               {project.description && (
                 <p className="text-sm md:text-base text-zinc-300 leading-relaxed">
                   {project.description}
