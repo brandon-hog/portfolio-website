@@ -24,7 +24,8 @@ export default function Projects() {
   return (
     <div className="w-full">
       <h1 className="text-3xl font-bold mb-8 text-white tracking-tight">Technical Projects</h1>
-    
+
+      {/* Search and Filter */}
       <div className="flex flex-col md:flex-row gap-4 mb-10">
         <input
           type="text"
@@ -70,25 +71,30 @@ export default function Projects() {
               {/* Subtle top gradient line for visual interest */}
               <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               
+              {/* Project Title */}
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-lg font-semibold text-white group-hover:text-zinc-200">
                   {project.title}
                 </h2>
               </div>
               
+              {/* Project Short Description */}
               <p className="text-zinc-400 text-sm mb-6 flex-grow leading-relaxed">
                 {project.shortDescription}
               </p>
               
-              <div className="flex flex-wrap items-center gap-2 mt-auto pt-4 border-t border-zinc-900">
+              {/* Project Category and Languages */}
+              <div className="flex  flex-col flex-wrap items-start gap-2 mt-auto pt-4 border-t border-zinc-900">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mr-auto">
                   {project.category}
                 </span>
-                {project.languages.map(lang => (
-                  <span key={lang} className="px-2 py-0.5 bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] font-mono rounded-md">
-                    {lang}
-                  </span>
-                ))}
+                <div className="flex flex-wrap items-center gap-2">
+                  {project.languages.map(lang => (
+                    <span key={lang} className="px-2 py-0.5 bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] font-mono rounded-md">
+                      {lang}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}

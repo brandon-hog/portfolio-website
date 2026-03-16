@@ -5,7 +5,7 @@ export default function Home() {
   const featuredProjects = PROJECTS_DATA.slice(0, 3);
 
   return (
-    <div className="flex flex-col items-start justify-center min-h-[80vh] space-y-12 animate-fade-in-up max-w-4xl pb-20 mt-8">
+    <div className="flex flex-col items-center justify-center min-h-[80vh] space-y-12 animate-fade-in-up max-w-4xl pb-20 mt-8">
       <div className="space-y-6">
 
         {/* Hero Section */}

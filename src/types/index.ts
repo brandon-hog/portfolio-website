@@ -6,6 +6,9 @@ export interface Project {
   category: string;
   shortDescription: string;
   detailedDescription: string[];
+  imageUrl?: string;
+  description?: string;
+  additionalNotes?: string | string[];
 }
 
 export interface Education {

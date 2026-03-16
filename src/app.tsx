@@ -20,7 +20,7 @@ export default function App() {
           </div>
         </nav>
 
-        <main className="flex-grow w-full max-w-5xl mx-auto px-6 py-12 md:py-20">
+        <main className="flex justify-center align-center w-full max-w-[75%] mx-auto px-6 py-12 md:py-20">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/education" element={<Education />} />
