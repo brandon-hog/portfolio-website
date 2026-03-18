@@ -69,16 +69,18 @@ export default function Home() {
                 {project.shortDescription}
               </p>
               
-              <div className="flex flex-wrap items-center gap-2 mt-auto pt-4 border-t border-zinc-900">
+              <div className="flex flex-col gap-2 mt-auto pt-4 border-t border-zinc-900">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mr-auto">
                   {project.category}
                 </span>
-                {/* Limiting mapped languages prevents UI overflow on smaller screens */}
-                {project.languages.slice(0, 2).map(lang => (
-                  <span key={lang} className="px-2 py-0.5 bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] font-mono rounded-md">
-                    {lang}
-                  </span>
-                ))}
+                <div>
+                  {/* Limiting mapped languages prevents UI overflow on smaller screens */}
+                  {project.languages.slice(0, 2).map(lang => (
+                    <span key={lang} className="px-2 py-0.5 mx-1 bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] font-mono rounded-md">
+                      {lang}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}

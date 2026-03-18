@@ -1,5 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { PROJECTS_DATA } from '../data/resume-data';
+import { Button } from '@/components/ui/button';
+import { Github } from 'lucide-react';
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
@@ -32,16 +34,25 @@ export default function ProjectDetail() {
             <span className="text-lg font-mono uppercase tracking-widest text-zinc-500 mr-auto">
               {project.category}
             </span>
-            <div>
+            <div className="flex flex-wrap">
               {project.languages.map((lang) => (
                 <span
                   key={lang}
-                  className="px-2 py-0.5 mr-2 bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] font-mono rounded-md"
+                  className="px-2 py-0.5 m-1 bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] font-mono rounded-md"
                 >
                   {lang}
                 </span>
               ))}
             </div>
+            {/* Include a github url if provided in the data */}
+            {
+              project.githubUrl && (
+                <Button className='w-fit font-mono'>
+                  <a href={project.githubUrl}>Github Repo</a>
+                  <Github/>
+                </Button>
+              )
+            }
         </header>
 
         <div className="relative z-10 space-y-8">

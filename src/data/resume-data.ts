@@ -40,6 +40,42 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
+    id: 'portfolio',
+    title: 'Portfolio Website', 
+    languages: ['Vite', 'React', 'TailwindCSS', 'Javascript', 'HTML'], 
+    category: 'Web Development',
+    shortDescription: 'Personal portfolio highlighting projects and education.', 
+    description: 'A fast, minimal portfolio built with modern tooling to showcase projects and academic work.',
+    detailedDescription: [
+      'Designed and deployed a personal portfolio website on Github Pages with a custom domain using brandonmh.dev.',
+      'Utilized Vite, React, TailwindCSS, and React-router to build the website and display my project portfolio and education.' 
+    ],
+    imageUrl: '/projects/portfolio-website.png',
+    additionalNotes: [
+      'Continuously evolving to reflect new projects and experiments.',
+      'Acts as a sandbox for trying new UI patterns and performance optimizations.'
+    ]
+  },
+  {
+    id: 'library-spring-react',
+    title: 'Library Management System', 
+    languages: ['Java', 'Spring Boot', 'React', 'TypeScript', 'PostgreSQL', 'Docker'], 
+    category: 'Full-Stack Development',
+    githubUrl: "https://github.com/brandon-hog/library-spring-react",
+    shortDescription: 'Containerized library application with a React frontend and a secure Spring Boot REST API.', 
+    description: 'A full-stack library application that manages user registration and book checkouts utilizing stateless JWT authentication, BCrypt hashing, and a PostgreSQL database.',
+    detailedDescription: [
+      'Developed a containerized full-stack library application featuring a React/TypeScript frontend and a secure Java Spring Boot REST API.', 
+      'Managed user registration and book checkouts utilizing stateless JWT authentication, BCrypt hashing, and PostgreSQL via Spring Data JPA.', 
+      'Leveraged Vite, React Router, and Tailwind CSS to build a responsive client interface for seamless user interaction and inventory management.' 
+    ],
+    imageUrl: '/projects/library-spring-react.png',
+    additionalNotes: [
+      'Architected utilizing Spring MVC patterns to ensure robust separation of concerns and testability.',
+      'Designed to easily accommodate future features such as kiosk checkout modes and external ISBN data imports.',
+    ]
+  },
+  {
     id: 'minesweeper',
     title: 'MineSweeper', 
     languages: ['C++'], 
@@ -58,21 +94,4 @@ export const PROJECTS_DATA: Project[] = [
       'Emphasizes testability by isolating game logic from I/O concerns.'
     ]
   },
-  {
-    id: 'portfolio',
-    title: 'Portfolio Website', 
-    languages: ['Vite', 'React', 'TailwindCSS', 'Javascript', 'HTML'], 
-    category: 'Web Development',
-    shortDescription: 'Personal portfolio highlighting projects and education.', 
-    description: 'A fast, minimal portfolio built with modern tooling to showcase projects and academic work.',
-    detailedDescription: [
-      'Designed and deployed a personal portfolio website on Github Pages with a custom domain using brandonmh.dev.',
-      'Utilized Vite, React, TailwindCSS, and React-router to build the website and display my project portfolio and education.' 
-    ],
-    imageUrl: '/projects/portfolio-website.png',
-    additionalNotes: [
-      'Continuously evolving to reflect new projects and experiments.',
-      'Acts as a sandbox for trying new UI patterns and performance optimizations.'
-    ]
-  }
 ];
