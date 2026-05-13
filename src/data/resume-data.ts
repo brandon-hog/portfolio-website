@@ -76,6 +76,25 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
+    id: 'dotnet-vuln-tracker',
+    title: 'VulnTracker', 
+    languages: ['C#', '.NET', 'ASP.NET Core', 'Blazor', 'Entity Framework Core'], 
+    category: 'Full-Stack Development',
+    githubUrl: "https://github.com/brandon-hog/dotnet-vuln-tracker",
+    shortDescription: 'Full-stack vulnerability management platform with a Blazor WebAssembly frontend and ASP.NET Core REST API.', 
+    description: 'An enterprise-patterned application that tracks network asset vulnerabilities by cross-referencing CPEs against an automated, locally synced National Vulnerability Database (NVD) mirror.',
+    detailedDescription: [
+      'Engineered a secure, full-stack vulnerability tracking platform with an ASP.NET Core REST API and a Blazor WebAssembly client.', 
+      'Managed user registration and network asset inventory utilizing opaque bearer token authentication, .NET Identity Core, and Entity Framework Core.', 
+      'Implemented an automated 24-hour background synchronization service to maintain a local NVD mirror for low-latency CVE reporting.' 
+    ],
+    imageUrl: '/projects/dotnet-vuln-tracker.png',
+    additionalNotes: [
+      'Architected utilizing Clean Architecture principles to ensure strict separation of concerns between the API, application logic, and domain layers.',
+      'Developed to solidify understanding of enterprise web development patterns by directly comparing .NET Core capabilities against Java Spring Boot.',
+    ]
+  },
+  {
     id: 'minesweeper',
     title: 'MineSweeper', 
     languages: ['C++'], 
