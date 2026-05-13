@@ -65,7 +65,7 @@ export default function ProjectDetail() {
                   <img
                     src={project.imageUrl}
                     alt={`Screenshot of ${project.title}`}
-                    className="w-full h-full object-left aspect-4/3"
+                    className="w-full h-full object-left aspect-auto"
                     loading="lazy"
                   />
                 </div>
