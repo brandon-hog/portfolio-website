@@ -35,7 +35,7 @@ export default function Home() {
               </h1>
 
               <p className="text-lg md:text-xl text-zinc-200/80 leading-relaxed font-light">
-                I am a Full-Stack Software Engineer and Computer Science student passionate about solving complex
+                I am a Full-Stack Software Engineer and Computer Science graduate passionate about solving complex
                 technical challenges. From engineering persistent UNIX-like file systems to building scalable REST
                 APIs, I prioritize maintainability, security, and efficiency. I am currently advancing my expertise
                 in cybersecurity and modern enterprise backends to continue building resilient infrastructure.
