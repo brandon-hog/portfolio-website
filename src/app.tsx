@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen min-w-screen bg-black text-zinc-100 flex flex-col font-sans selection:bg-zinc-800 selection:text-white">
+      <div className="bg-black text-zinc-100 flex flex-col font-sans selection:bg-zinc-800 selection:text-white">
         
         {/* Navigation */}
         <nav className="bg-black/50 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
